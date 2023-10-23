@@ -1,0 +1,93 @@
+/* Réinitialisation des styles par défaut */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles de base */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+article {
+    margin-bottom: 40px;
+}
+
+article h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+article p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.pagination {
+    text-align: center;
+}
+
+.pagination span {
+    font-size: 18px;
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    margin: 0 5px;
+}
+
+/* Styles pour le pied de page */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+/* Styles spécifiques pour les liens */
+a {
+    color: #0078d4;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: unset;
+}

@@ -1,0 +1,84 @@
+/* Style général de la page */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: orangered; /* Couleur de fond */
+}
+
+/* Style pour l'image en haut à gauche */
+.image-top-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100px; /* Ajustez la largeur de l'image */
+    max-height: 100px; /* Ajustez la hauteur de l'image */
+}
+/* Style général pour le corps de la page */
+body {
+    font-family: Arial, sans-serif; /* Police de caractères par défaut */
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Couleur de fond de la page */
+    color: #333; /* Couleur du texte */
+}
+
+/* Style pour les titres de page */
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0078d4; /* Couleur bleue pour les titres */
+    margin-bottom: 20px;
+}
+
+/* Style pour les paragraphes de texte */
+p {
+    font-size: 16px;
+    line-height: 1.5; /* Espacement entre les lignes */
+    margin-bottom: 10px;
+}
+
+/* Style pour les liens hypertextes */
+a {
+    color: #0078d4; /* Couleur bleue pour les liens */
+    text-decoration: none; /* Supprime les soulignements par défaut */
+}
+
+a:hover {
+    text-decoration: underline; /* Soulignement lors du survol */
+}
+
+/* Style pour les boutons */
+button {
+    background-color: #0078d4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Style pour les conteneurs */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff; /* Couleur de fond du conteneur */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+/* Style pour les images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style pour les listes à puces */
+ul, ol {
+    margin-left: 20px;
+}
+
+/* Style pour les éléments de liste */
+li {
+    margin-bottom: 5px;
+}

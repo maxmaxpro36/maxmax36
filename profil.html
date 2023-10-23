@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vérification de Mot Spécial</title>
+</head>
+<body>
+    <img src="78952852876547684538542.jpg"></img>
+
+<link rel="stylesheet" href="chatgpt9999.css">
+
+    
+    <p>Entrez le mot dans l'image :</p>
+    <input type="text" id="mot-saisi">
+    <button id="verifier-btn">Vérifier</button>
+    <p id="message"></p>
+    <div id="Aller sur le site"></div>
+
+    <script>
+        const motSpecial = "2wc38"; // Le mot spécial à entrer
+
+        document.getElementById('verifier-btn').addEventListener('click', function() {
+            const motSaisi = document.getElementById('mot-saisi').value.toLowerCase(); // Convertit en minuscules
+            const messageElement = document.getElementById('message');
+            const boutonSpecialElement = document.getElementById('Aller sur le site');
+
+            if (motSaisi === motSpecial) {
+                messageElement.textContent = "   ";
+                boutonSpecialElement.innerHTML = '<button id="Aller sur le site">Aller sur le site</button>';
+                boutonSpecialElement.style.display = 'block';
+
+                // Ajoutez ici le code pour définir le comportement du bouton spécial
+                document.getElementById('Aller sur le site').addEventListener('click', function() {
+                    window.location.href = "chatgptsite.html"; // Remplacez "autre_page.html" par l'URL de la page vers laquelle vous souhaitez rediriger
+                });
+            } else {
+                messageElement.textContent = "Désolé, le mot est  correct.";
+                boutonSpecialElement.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+/* Styles futuristes pour la page À propos */
+
+/* En-tête */
+header {
+    background-color: #222;
+    color: darkred;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #555;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Sections */
+section {
+    padding: 20px;
+    background-color: grey;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Lien vers la page d'accueil */
+a.back-to-home {
+    color: beige;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+a.back-to-home:hover {
+    color: turquoise;
+}
+
+/* Pied de page */
+footer {
+    background-color: royalblue;
+    color: greenyellow;
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #555;
+}

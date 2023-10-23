@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pierre-papier-ciseaux</title>
+</head>
+<body>
+    <h1>Pierre-papier-ciseaux</h1>
+    <p>Fais ton choix :</p>
+    <button id="pierre">Pierre</button>
+    <button id="papier">Papier</button>
+    <button id="ciseaux">Ciseaux</button>
+    <p id="resultat"></p>
+    <button id="rejouer">Rejouer</button>
+    <button><a href=chatgptsite.html>Quitté</a></button>
+    <script>
+        // Sélectionne les éléments du DOM
+        const pierreBtn = document.getElementById("pierre");
+        const papierBtn = document.getElementById("papier");
+        const ciseauxBtn = document.getElementById("ciseaux");
+        const resultatTexte = document.getElementById("resultat");
+        const rejouerBtn = document.getElementById("rejouer");
+
+        // Tableau des choix possibles pour le joueur et l'ordinateur
+        const choix = ["Pierre", "Papier", "Ciseaux"];
+
+        // Événements pour les boutons de choix
+        pierreBtn.addEventListener("click", () => jouer(0));
+        papierBtn.addEventListener("click", () => jouer(1));
+        ciseauxBtn.addEventListener("click", () => jouer(2));
+
+        // Fonction pour déterminer le résultat du jeu
+        function jouer(choixJoueur) {
+            const choixOrdinateur = Math.floor(Math.random() * 3); // Choix aléatoire de l'ordinateur
+
+            const resultat = determinerResultat(choixJoueur, choixOrdinateur);
+
+            // Affiche le résultat
+            resultatTexte.textContent = `Tu as choisi ${choix[choixJoueur]}. L'ordinateur a choisi ${choix[choixOrdinateur]}. ${resultat}`;
+
+            // Affiche le bouton "Rejouer"
+            rejouerBtn.style.display = "block";
+        }
+
+        // Fonction pour déterminer le résultat du jeu
+        function determinerResultat(choixJoueur, choixOrdinateur) {
+            if (choixJoueur === choixOrdinateur) {
+                return "C'est une égalité !";
+            } else if ((choixJoueur === 0 && choixOrdinateur === 2) || (choixJoueur === 1 && choixOrdinateur === 0) || (choixJoueur === 2 && choixOrdinateur === 1)) {
+                return "Tu as gagné !";
+            } else {
+                return "L'ordinateur a gagné !";
+            }
+        }
+
+        // Événement pour le bouton "Rejouer"
+        rejouerBtn.addEventListener("click", () => {
+            resultatTexte.textContent = "";
+            rejouerBtn.style.display = "none";
+        });
+    </script>
+
+ <link rel="stylesheet" type="text/css" href="jeujeumax.css">
+</body>
+</html>

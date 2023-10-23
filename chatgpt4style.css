@@ -1,0 +1,60 @@
+/* Styles médiévaux pour la page Services */
+
+/* En-tête */
+header {
+    background-color: #8B4513; /* Marron */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #5A2A0A; /* Teinte plus sombre du marron */
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+    font-family: 'Old English Text MT', serif; /* Police médiévale, utilisez une police médiévale appropriée */
+    letter-spacing: 3px;
+}
+
+/* Sections */
+section {
+    padding: 20px;
+    background-color: #D2B48C; /* Tan */
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #000; /* Texte noir pour le contraste */
+}
+
+section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: 'Old English Text MT', serif; /* Police médiévale */
+    letter-spacing: 1px;
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Liens */
+a {
+    color: darkgoldenrod; /* Marron pour les liens */
+    text-decoration: none;
+    font-family: 'Old English Text MT', serif; /* Police médiévale */
+    font-weight: bold;
+}
+
+a:hover {
+    color: red; /* Teinte plus sombre du marron pour les liens au survol */
+}
+
+/* Pied de page */
+footer {
+    background-color: #8B4513; /* Marron */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #5A2A0A; /* Teinte plus sombre du marron */
+}
